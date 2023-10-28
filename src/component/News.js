@@ -41,43 +41,7 @@ const News = (props) => {
 
 
 
-  // const handlePrevclick = async () => {
-  //   console.log('previous');
-  //   // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page - 1}&pageSize=${props.pageSize}`;
-  //   // this.setState({loading: true});
-  //   // let data = await fetch(url);
-  //   // let parseData = await data.json();
-  //   // console.log(parseData);
-
-  //   // this.setState({
-  //   //   page: page - 1,
-  //   //   articles: parseData.articles,
-  //   //   loading: false
-  //   // })
-  //   setPage(page-1);
-  //    updateNews();
-  // }
-
-  // const handleNextclick = async () => {
-  //   console.log('next');
-  //   // if (!(page + 1 > Math.ceil(totalResults / props.pageSize))) {
-
-  //   //   let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page - 1}&pageSize=${props.pageSize}`;
-  //   //   this.setState({loading: true});
-  //   //   let data = await fetch(url);
-  //   //   let parseData = await data.json();
-  //   //   console.log(parseData);
-
-  //   //   this.setState({
-  //   //     page: page + 1,
-  //   //     articles: parseData.articles,
-  //   //     loading: false
-  //   //   })
-  //   //}
-  //   setPage(page+1);
-  //   updateNews();
-  // }
-
+ 
   const fetchMoreData = async () => {
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
     setPage(page+1);
@@ -119,13 +83,7 @@ const News = (props) => {
 
       </InfiniteScroll>
 
-
-
-      {/* <div className="container d-flex justify-content-between">
-          <button disabled={page <= 1} type="button" className="btn btn-dark" onClick={this.handlePrevclick}>&larr; Previous</button>1
-          <button disabled={page + 1 > Math.ceil(totalResults / props.pageSize)} type="button" className="btn btn-dark" onClick={this.handleNextclick}>Next &rarr;</button>
-        </div> */}
-      {/* </div > */}
+   
     </>
   )
 
