@@ -17,10 +17,7 @@ const NavBar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="/">Home</Link>
                             </li>
-                            {/* <li className="nav-item">
-                                    <Link className="nav-link" to="/Linkbout">About</Link>
-                                </li> */}
-
+                            
                             <li className="nav-item">
                                 <Link className="nav-link" to="/business">Business</Link>
                             </li>
@@ -46,10 +43,6 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    {/* <div className="form-check form-switch text-light">
-                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" />
-                            <label className="form-check-label" for="flexSwitchCheckChecked">Enable Light Mode</label>
-                        </div> */}
                 </div>
             </nav>
         </div>
